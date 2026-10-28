@@ -1,0 +1,24 @@
+{
+  "project": "SecureSight",
+  "architecture": "ResNet-50 + pretrained DDPM",
+  "cnn_weight": 0.7,
+  "ddpm_weight": 0.3,
+  "fake_threshold": 0.5,
+  "labels": {
+    "FAKE": 0,
+    "REAL": 1
+  },
+  "cnn_checkpoint": "resnet50_best.pth",
+  "ddpm_classifier": "ddpm_classifier.joblib",
+  "ddpm_model_id": "google/ddpm-cifar10-32",
+  "ddpm_feature_count": 40,
+  "ddpm_timesteps": [
+    100,
+    300,
+    500,
+    700,
+    900
+  ],
+  "validation_images": 1000,
+  "validation_accuracy_percent": 95.2
+}

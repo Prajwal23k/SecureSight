@@ -1,0 +1,18 @@
+{
+  "model_id": "google/ddpm-cifar10-32",
+  "timesteps": [
+    100,
+    300,
+    500,
+    700,
+    900
+  ],
+  "feature_count": 40,
+  "labels": {
+    "FAKE": 0,
+    "REAL": 1
+  },
+  "threshold": 0.5,
+  "seed": 42,
+  "validation_accuracy": 0.824
+}
